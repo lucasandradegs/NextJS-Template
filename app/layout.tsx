@@ -22,9 +22,7 @@ export default function RootLayout({
     <html lang="pt" suppressHydrationWarning>
       <body className={`${inter.className}`}>
         <ThemeProvider defaultTheme="dark" attribute="class">
-          <main className="mx-auto mb-8 max-w-[1440px] antialiased">
-            {children}
-          </main>
+          <main className="mx-auto max-w-[1440px] antialiased">{children}</main>
         </ThemeProvider>
       </body>
     </html>
