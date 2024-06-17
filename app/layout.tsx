@@ -7,10 +7,10 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | Titulo da página',
-    default: 'Titulo da página',
+    template: '%s | Page Title',
+    default: 'Page Title',
   },
-  description: 'Descrição da página',
+  description: 'Page description',
 }
 
 export default function RootLayout({
