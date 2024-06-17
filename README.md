@@ -2,6 +2,8 @@
 
 #### This template is designed to help you quickly set up a new Next.js project with standardized formatting, theme toggling, and a basic layout configuration. It includes configurations for ESLint, Prettier, Tailwind CSS, and a theme toggle component.
 
+Please, remember to rename the project on package.json and package-lock.json!
+
 ## Features
 
 - **Pre-configured ESLint and Prettier**: Ensures consistent code formatting and style.
