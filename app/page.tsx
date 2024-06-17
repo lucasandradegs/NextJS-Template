@@ -1,4 +1,9 @@
 import ThemeToggle from '@/components/ThemeToggle/themeToggle'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Home',
+}
 
 export default function HomeToggle() {
   return (
