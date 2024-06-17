@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Project Starter Template
 
-## Getting Started
+#### This template is designed to help you quickly set up a new Next.js project with standardized formatting, theme toggling, and a basic layout configuration. It includes configurations for ESLint, Prettier, Tailwind CSS, and a theme toggle component.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Pre-configured ESLint and Prettier**: Ensures consistent code formatting and style.
+- **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
+- **Theme Toggle**: Built-in dark/light mode toggle.
+- **Metadata Configuration**: Easily customizable metadata for SEO.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- You just need to clone this repo and then npm install 😁
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# Recommended VSCode Settings
+#### I strongly recommend using these configurations in your User Settings Preferences (JSON) if you are using VSCode:
 
-## Learn More
+Open the command palette (Ctrl+Shift+P or Cmd+Shift+P on macOS).
+Type "Preferences: Open Settings (JSON)" and select it.
+Add the following configurations:
+````json
+{
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  }
+}
+````
+This will automatically fix ESLint errors when you save the file.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
