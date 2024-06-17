@@ -2,7 +2,17 @@
 
 #### This template is designed to help you quickly set up a new Next.js project with standardized formatting, theme toggling, and a basic layout configuration. It includes configurations for ESLint, Prettier, Tailwind CSS, and a theme toggle component.
 
-Please, remember to rename the project on package.json and package-lock.json!
+## How to use
+
+At the top of the page, you will find:
+
+<img width="160" alt="Captura de Tela 2024-06-17 às 14 30 15" src="https://github.com/lucasandradegs/NextJS-Template/assets/115107945/13d73f3e-f34b-4352-958f-183c61653508">
+
+And then:
+
+<img width="180" alt="Captura de Tela 2024-06-17 às 14 30 35" src="https://github.com/lucasandradegs/NextJS-Template/assets/115107945/d915a0ac-3132-4f34-8f82-e2901dfe55cf">
+
+Now you're good to go!
 
 ## Features
 
@@ -10,10 +20,6 @@ Please, remember to rename the project on package.json and package-lock.json!
 - **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
 - **Theme Toggle**: Built-in dark/light mode toggle.
 - **Metadata Configuration**: Easily customizable metadata for SEO.
-
-## Installation
-
-- You just need to clone this repo and then npm install 😁
 
 # Recommended VSCode Settings
 #### I strongly recommend using these configurations in your User Settings Preferences (JSON) if you are using VSCode:
