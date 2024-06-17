@@ -2,32 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --bg-color-dark: #202126;
+  --secondary-bg-color-dark: #1b1b1f;
+  --text-color-dark: #FFFFF5DB;
+  --secondary-text-color-dark: #EBEBF599;
+  --third-text-color-dark: #2DEB69;
+  --menu-color-dark: #FFF;
+
+  --bg-color-light: #F6F6F7;
+  --secondary-bg-color-light: #FFF;
+  --text-color-light: #3C3C43;
+  --secondary-text-color-light: #3C3C43C7;
+  --third-text-color-light: #095F24;
+  --menu-color-light: #000;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+[class="dark"] {
+  --bg-color: var(--bg-color-dark);
+  --secondary-bg-color: var(--secondary-bg-color-dark);
+  --text-color: var(--text-color-dark);
+  --text-color-hover: var(--text-color-hover-dark);
+  --secondary-text-color: var(--secondary-text-color-dark);
+  --third-text-color: var(--third-text-color-dark);
+  --menu-color: var(--menu-color-dark);
 }
 
+[class="dark"] .hover-effect {
+  transition: color .6s ease-in-out;
+}
+
+[class="dark"] .hover-effect:hover {
+  --text-color: #2DEB69;
+}
+
+[class="dark"] .isActive {
+  --text-color: #2DEB69;
+}
+
+[class="light"] {
+  --bg-color: var(--bg-color-light);
+  --secondary-bg-color: var(--secondary-bg-color-light);
+  --text-color: var(--text-color-light);
+  --text-color-hover: var(--text-color-hover-light);
+  --secondary-text-color: var(--secondary-text-color-light);
+  --third-text-color: var(--third-text-color-light);
+  --menu-color: var(--menu-color-light);
+}
+
+[class="light"] .hover-effect {
+  transition: color .6s ease-in-out;
+}
+
+[class="light"] .hover-effect:hover {
+  --text-color: #2e6611;
+}
+
+[class="light"] .isActive {
+  --text-color: #2e6611;
+}
+
+html,
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: #000;
+  background: #fff;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+[class='dark'],
+[class='dark'] body {
+  color: #fff;
+  background: #1b1b1f;
 }
